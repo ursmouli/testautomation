@@ -1,11 +1,12 @@
 *** Settings ***
 Library    SeleniumLibrary
+Variables  ../Locators/Locators.py
 
 *** Variables ***
 
 *** Keywords ***
 Load
-    Go To  http://www.amazon.com
+    Go To  ${SITE_URL}
 
 Verify Page Loaded
     Wait Until Page Contains    Your Account

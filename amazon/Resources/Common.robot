@@ -1,12 +1,12 @@
 *** Settings ***
 Library  SeleniumLibrary
+Variables  Locators/Locators.py
 
 *** Variables ***
 
-
 *** Keywords ***
 Begin Web Test
-    Open Browser  about:blank  firefox
+    Open Browser  about:blank  ${BROWSER}
     # maximize browser window
     Maximize Browser Window
 

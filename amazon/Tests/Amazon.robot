@@ -12,6 +12,11 @@ Suite Teardown  Common.Clear Test Data
 # Copy/Paste below line to Terminal window to execute
 # robot -d Results Tests/Amazon.robot
 
+*** Variables ***
+# ${BROWSER} =  firefox
+# ${SITE_URL} =  https://www.amazon.com
+# ${SEARCH_TERM} =  Ferrari 458
+
 *** Test Cases ***
 Logged out user can search for products
     [Tags]  Smoke
