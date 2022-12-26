@@ -2,6 +2,7 @@
 Documentation  This is basic info about whole suite
 Library  SeleniumLibrary
 
+*** Variables ***
 
 *** Test Cases ***
 User must sign in to check out
@@ -18,7 +19,8 @@ User must sign in to check out
     Click Button  xpath=//*[@id="add-to-cart-button"]
     Wait Until Page Contains  Added to Cart
     Sleep  5s
-    Click Element  xpath=//span[@id="attach-sidesheet-checkout-button"]
+    #Click Element  xpath=//span[@id="attach-sidesheet-checkout-button"]
+    Click Button    css=#sc-buy-box-ptc-button > span:nth-child(1) > input:nth-child(1)
     Page Should Contain Element  continue-announce
     Element Text Should Be  continue-announce  Continue
     Close Browser
