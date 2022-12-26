@@ -4,8 +4,10 @@ Documentation  This is some basic info about whole suite
 Resource  ../Resources/Common.robot  # necessary for SetUp and TearDown
 Resource  ../Resources/AmazonApp.robot  # necessary for lower level keywords in test cases
 
+Suite Setup  Common.Insert Test Data
 Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
+Suite Teardown  Common.Clear Test Data
 
 # Copy/Paste below line to Terminal window to execute
 # robot -d Results Tests/Amazon.robot

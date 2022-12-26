@@ -12,3 +12,9 @@ Begin Web Test
 
 End Web Test
     Close Browser
+
+Insert Test Data
+    Log  inserting sample test data ...
+
+Clear Test Data
+    Log  clearing sample test data ...
