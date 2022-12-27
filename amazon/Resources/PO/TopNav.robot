@@ -4,6 +4,8 @@ Library  SeleniumLibrary
 Variables  ../Locators/Locators.py
 
 *** Variables ***
+${TOPNAV_SEARCH_INPUT} =      id=twotabsearchtextbox
+${TOPNAV_SEARCH_BUTTON} =     xpath=//*[@id="nav-search-submit-button"]
 
 *** Keywords ***
 Search For Products
@@ -12,7 +14,7 @@ Search For Products
     
 
 Enter Search Term
-    Input Text  id=twotabsearchtextbox  ${SEARCH_TERM}
+    Input Text  ${TOPNAV_SEARCH_INPUT}  ${SEARCH_TERM}
 
 Submit Search
-    Click Button  xpath=//*[@id="nav-search-submit-button"]
+    Click Button  ${TOPNAV_SEARCH_BUTTON}
