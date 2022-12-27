@@ -13,4 +13,4 @@ Go To "Team" Page
     LandingPage.Verify Page Loaded
 
 Validate "Team" Page
-    Teams.Verify Teams Header
+    Teams.Validate "Team" Header
